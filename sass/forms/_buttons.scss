@@ -1,0 +1,26 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+	border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border-color: $color__border-button;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(1);
+	line-height: 1;
+	padding: 12px;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+		outline: none;
+	}
+}

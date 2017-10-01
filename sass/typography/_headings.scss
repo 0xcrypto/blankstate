@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+  text-transform:uppercase;
+}
+
+.site-title {
+  @extend h1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.site-description {
+  @extend h1;
+  @include font-size(1);
+  text-align: center;
+}
+
+.site {
+  width: 95%;
+  margin: auto;
+}
+
+.content-area {
+  width: 70%;
+  float: left;
+  padding: 2%;
+}
+
+.site-footer {
+  text-align: center;
+  margin: 2em 0 2em 0;
+}
