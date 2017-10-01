@@ -22,7 +22,7 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'blankstate' ), 'blankstate', '<a href="https://vikrant.website">Vikrant Singh Chauhan</a>' );
+				printf( esc_html__( '%1$s by %2$s.', 'blankstate' ), 'blankstate', '<a href="https://vikrant.website">Vikrant</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
