@@ -1,8 +1,8 @@
 <?php
 /**
- * Blank State Theme Customizer
+ * Noko Theme Customizer
  *
- * @package Blank_State
+ * @package Noko
  */
 
 /**

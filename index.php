@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Blank_State
+ * @package Noko
  */
 
 get_header(); ?>

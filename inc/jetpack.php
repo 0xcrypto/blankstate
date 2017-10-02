@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Blank_State
+ * @package Noko
  */
 
 /**

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Blank_State
+ * @package Noko
  */
 
 if ( ! function_exists( 'noko_posted_on' ) ) :

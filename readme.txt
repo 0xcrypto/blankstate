@@ -1,4 +1,4 @@
-=== Blank State ===
+=== Noko ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Blank State.
+A starter theme called Noko.
 
 == Description ==
 
@@ -25,7 +25,7 @@ A Nice looking theme using React JS
 
 = Does this theme support any plugins? =
 
-Blank State includes support for Infinite Scroll in Jetpack.
+Noko includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
