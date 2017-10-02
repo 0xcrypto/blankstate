@@ -1,14 +1,14 @@
 Noko
 ===
 
-Contributors: 0xcrypto
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: 0xcrypto  
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready  
 
-Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 0.0.1
-License: GNU General Public License v2 or later
-License URI: LICENSE
+Requires at least: 4.0  
+Tested up to: 4.8  
+Stable tag: 0.0.1  
+License: GNU General Public License v2 or later  
+License URI: LICENSE  
 
 A WordPress theme called Noko.
 
