@@ -1,6 +1,6 @@
 /*!
-Theme Name: Blank State
-Theme URI: https://github.com/0xcrypto/blankstate
+Theme Name: Noko
+Theme URI: https://github.com/0xcrypto/noko
 Author: Vikrant Singh Chauhan
 Author URI: https://vikrant.website
 Description: Minimal WordPress Theme
@@ -144,7 +144,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-button,
+button, .btn-primary,
 input,
 optgroup,
 select,
@@ -153,25 +153,25 @@ textarea {
   font: inherit;
   margin: 0; }
 
-button {
+button, .btn-primary {
   overflow: visible; }
 
-button,
+button, .btn-primary,
 select {
   text-transform: none; }
 
-button,
+button, .btn-primary,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
-button[disabled],
+button[disabled], [disabled].btn-primary,
 html input[disabled] {
   cursor: default; }
 
-button::-moz-focus-inner,
+button::-moz-focus-inner, .btn-primary::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -220,11 +220,12 @@ th {
 --------------------------------------------------------------*/
 body,
 button,
+.btn-primary,
 input,
 select,
 optgroup,
 textarea {
-  color: #000;
+  color: #333;
   font-family: "Dosis", "Ubuntu", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -232,9 +233,10 @@ textarea {
 
 h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
   clear: both;
-  text-transform: uppercase; }
+  color: #000; }
 
 .site-title {
+  text-transform: uppercase;
   font-weight: bold;
   text-align: center; }
 
@@ -244,17 +246,54 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .site {
-  width: 95%;
   margin: auto; }
 
+@media screen and (max-width: 37.5em) {
+  .site-header {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%; }
+    .site-header .site-title {
+      margin: 0;
+      padding-top: 0.5em; }
+    .site-header .menu-toggle {
+      position: absolute;
+      top: 0;
+      margin: 1em; } }
+.site-header .menu ul {
+  background: #fff; }
+
 .content-area {
-  width: 70%;
+  float: left;
+  padding: 8%; }
+  @media screen and (min-width: 37.5em) {
+    .content-area {
+      width: 70%; } }
+
+.widget-area {
   float: left;
   padding: 2%; }
+  @media screen and (min-width: 37.5em) {
+    .widget-area {
+      width: 30%; } }
+  .widget-area ul {
+    margin: 0;
+    padding-left: 0.5em; }
+    .widget-area ul li {
+      list-style: none; }
 
 .site-footer {
+  flex: none;
   text-align: center;
   margin: 2em 0 2em 0; }
+
+.entry-title {
+  text-transform: uppercase; }
+
+.sep {
+  color: #ccc;
+  font-weight: bolder; }
 
 p {
   margin-bottom: 1.5em;
@@ -356,7 +395,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+button, .btn-primary,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -371,13 +410,13 @@ input[type="submit"] {
   font-size: 1rem;
   line-height: 1;
   padding: 12px; }
-  button:hover,
+  button:hover, .btn-primary:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-  button:active, button:focus,
+  button:active, .btn-primary:active, button:focus, .btn-primary:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
@@ -386,6 +425,11 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb;
     outline: none; }
+
+.btn-primary {
+  -webkit-appearance: none;
+  color: #fff !important;
+  background: #009688; }
 
 input[type="text"],
 input[type="email"],
@@ -611,15 +655,6 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget-area {
-  width: 28%;
-  float: left; }
-  .widget-area ul {
-    margin: 0;
-    padding-left: 0.5em; }
-    .widget-area ul li {
-      list-style: none; }
-
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }

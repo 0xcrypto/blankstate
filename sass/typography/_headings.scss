@@ -1,10 +1,11 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-  text-transform:uppercase;
+  color: #000;
 }
 
 .site-title {
   @extend h1;
+  text-transform:uppercase;
   font-weight: bold;
   text-align: center;
 }
@@ -16,17 +17,72 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site {
-  width: 95%;
   margin: auto;
 }
 
+.site-header {
+  @media screen and (max-width: 37.5em) {
+
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+
+    .site-title {
+      margin: 0;
+      padding-top:0.5em;
+    }
+
+    .menu-toggle {
+      position: absolute;
+      top: 0;
+      margin: 1em;
+    }
+  }
+
+  .menu ul {
+      background: #fff;
+    }
+}
+
 .content-area {
-  width: 70%;
   float: left;
-  padding: 2%;
+  padding: 8%;  
+
+  @media screen and (min-width: 37.5em) {
+    width: 70%;
+  }
+}
+
+.widget-area {
+  @media screen and (min-width: 37.5em) {
+    width: 30%;
+  }
+
+  float: left;
+  padding: 2%;  
+
+  
+
+  ul {
+    margin: 0;
+    padding-left: 0.5em;
+    li {
+      list-style: none;
+    }}
 }
 
 .site-footer {
+  flex: none;
   text-align: center;
   margin: 2em 0 2em 0;
+}
+
+.entry-title {
+  text-transform: uppercase;
+}
+
+.sep {
+  color: #ccc;
+  font-weight: bolder;
 }

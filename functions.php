@@ -1,13 +1,13 @@
 <?php
 /**
- * Blank State functions and definitions
+ * Noko functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Blank_State
+ * @package Noko
  */
 
-if ( ! function_exists( 'blankstate_setup' ) ) :
+if ( ! function_exists( 'noko_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'blankstate_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function blankstate_setup() {
+	function noko_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Blank State, use a find and replace
-		 * to change 'blankstate' to the name of your theme in all the template files.
+		 * If you're building a theme based on Noko, use a find and replace
+		 * to change 'noko' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'blankstate', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'noko', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'blankstate_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'blankstate' ),
+			'menu-1' => esc_html__( 'Primary', 'noko' ),
 		) );
 
 		/*
@@ -60,7 +60,7 @@ if ( ! function_exists( 'blankstate_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'blankstate_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'noko_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -81,7 +81,7 @@ if ( ! function_exists( 'blankstate_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'blankstate_setup' );
+add_action( 'after_setup_theme', 'noko_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -90,46 +90,52 @@ add_action( 'after_setup_theme', 'blankstate_setup' );
  *
  * @global int $content_width
  */
-function blankstate_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'blankstate_content_width', 640 );
+function noko_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'noko_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'blankstate_content_width', 0 );
+add_action( 'after_setup_theme', 'noko_content_width', 0 );
+
+function noko_excerpt() {
+    return '<a class="more-link btn-primary" href="' . get_permalink() . '">Read More</a>';
+}
+add_filter( 'the_content_more_link', 'noko_excerpt' );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function blankstate_widgets_init() {
+function noko_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'blankstate' ),
+		'name'          => esc_html__( 'Sidebar', 'noko' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'blankstate' ),
+		'description'   => esc_html__( 'Add widgets here.', 'noko' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'blankstate_widgets_init' );
+add_action( 'widgets_init', 'noko_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function blankstate_scripts() {
-	wp_enqueue_style( 'blankstate-style', get_stylesheet_uri() );
+function noko_scripts() {
+	wp_enqueue_style( 'noko-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'blankstate-fonts', 'https://fonts.googleapis.com/css?family=Dosis' );
+	wp_enqueue_style( 'noko-fonts', 'https://fonts.googleapis.com/css?family=Dosis' );
+	wp_enqueue_style( 'noko-icon-font', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 
-	wp_enqueue_script( 'blankstate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'noko-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'blankstate-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'noko-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'blankstate_scripts' );
+add_action( 'wp_enqueue_scripts', 'noko_scripts' );
 
 /**
  * Implement the Custom Header feature.

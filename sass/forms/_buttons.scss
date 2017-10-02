@@ -24,3 +24,10 @@ input[type="submit"] {
 		outline: none;
 	}
 }
+
+.btn-primary {
+	@extend button;
+	-webkit-appearance: none;
+	color: #fff !important;
+	background: $color__background-button;
+}
