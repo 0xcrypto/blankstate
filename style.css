@@ -267,16 +267,10 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
 .content-area {
   float: left;
   padding: 8%; }
-  @media screen and (min-width: 37.5em) {
-    .content-area {
-      width: 70%; } }
 
 .widget-area {
   float: left;
   padding: 2%; }
-  @media screen and (min-width: 37.5em) {
-    .widget-area {
-      width: 30%; } }
   .widget-area ul {
     margin: 0;
     padding-left: 0.5em; }
@@ -298,11 +292,31 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
 .entry-footer span {
   margin: 0.5em; }
 
+.grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center; }
+
 .card {
-  height: 15em;
-  width: 1px;
+  flex: auto;
+  float: left;
+  max-height: 25em;
+  width: 15em;
+  margin: 0.5em !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+  overflow: hidden; }
+  .card .card-image {
+    width: 100%; }
+  .card .text-content {
+    padding: 10px;
+    font-size: 12.8px;
+    font-size: 0.8rem; }
+    .card .text-content p {
+      font-size: 8px;
+      font-size: 0.5rem; }
   .card:hover, .card:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
@@ -524,8 +538,8 @@ a {
   .main-navigation ul {
     display: none;
     list-style: none;
-    margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    text-align: center; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -544,8 +558,9 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     margin: 1em;
+    display: inline-block;
+    text-align: center;
     position: relative; }
   .main-navigation a {
     display: block;

@@ -16,10 +16,9 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
-
     <?php
     if ( have_posts() ) :
-
+      echo '<div class="grid">';
       if ( is_home() && ! is_front_page() ) : ?>
         <header>
           <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -39,7 +38,7 @@ get_header(); ?>
         get_template_part( 'template-parts/content', 'thumb' );
 
       endwhile;
-
+      echo '</div>';
       the_posts_navigation();
 
     else :
@@ -47,10 +46,9 @@ get_header(); ?>
       get_template_part( 'template-parts/content', 'none' );
 
     endif; ?>
-
+    
     </main><!-- #main -->
   </div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
