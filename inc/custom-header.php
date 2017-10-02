@@ -14,27 +14,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses blankstate_header_style()
+ * @uses noko_header_style()
  */
-function blankstate_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'blankstate_custom_header_args', array(
+function noko_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'noko_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'blankstate_header_style',
+		'wp-head-callback'       => 'noko_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'blankstate_custom_header_setup' );
+add_action( 'after_setup_theme', 'noko_custom_header_setup' );
 
-if ( ! function_exists( 'blankstate_header_style' ) ) :
+if ( ! function_exists( 'noko_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see blankstate_custom_header_setup().
+	 * @see noko_custom_header_setup().
 	 */
-	function blankstate_header_style() {
+	function noko_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
