@@ -268,9 +268,16 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
   float: left;
   padding: 8%; }
 
+@media screen and (min-width: 37.5em) {
+  .content-area-w-sidebar {
+    width: 70%; } }
+
 .widget-area {
   float: left;
   padding: 2%; }
+  @media screen and (min-width: 37.5em) {
+    .widget-area {
+      width: 30%; } }
   .widget-area ul {
     margin: 0;
     padding-left: 0.5em; }

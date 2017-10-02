@@ -47,22 +47,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-area {
   float: left;
-  padding: 8%;  
+  padding: 8%;
+}
 
-  // @media screen and (min-width: 37.5em) {
-  //   width: 70%;
-  // }
+.content-area-w-sidebar {
+  @media screen and (min-width: 37.5em) {
+    width: 70%;
+  }
 }
 
 .widget-area {
-  // @media screen and (min-width: 37.5em) {
-  //   width: 30%;
-  // }
 
   float: left;
   padding: 2%;  
 
-  
+  @media screen and (min-width: 37.5em) {
+    width: 30%;
+  }  
 
   ul {
     margin: 0;
@@ -71,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
       list-style: none;
     }}
 }
+
+// .widget-area-w-sidebar {
+
+// }
 
 .site-footer {
   flex: none;

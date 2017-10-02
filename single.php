@@ -9,7 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area <?php
+  if( is_active_sidebar( 'sidebar-1' ) ) echo 'content-area-w-sidebar'; ?>">
 		<main id="main" class="site-main">
 
 		<?php
