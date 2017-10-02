@@ -1,19 +1,19 @@
 === Noko ===
 
-Contributors: automattic
+Contributors: 0xcrypto
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.0
+Stable tag: 0.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Noko.
+A WordPress theme called Noko.
 
 == Description ==
 
-A Nice looking theme using React JS
+Noko theme is a simple theme focused on readability. Theme takes some inspiration from material design but does not completely follow it.
 
 == Installation ==
 
@@ -29,8 +29,8 @@ Noko includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
-* Initial release
+= 1.0 - Oct 02 2017 =
+* Pre Alpha Preview
 
 == Credits ==
 
