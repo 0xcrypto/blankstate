@@ -16,7 +16,23 @@
   <?php endif;?>
     <div class="text-content">
       <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-      <span style="float:right">By <?php echo get_the_author(); ?></span>
+      <span style="float:right">
+      <?php
+
+      $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+      $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+    }
+
+    $time_string = sprintf( $time_string,
+      esc_attr( get_the_date( 'c' ) ),
+      esc_html( get_the_date() ),
+      esc_attr( get_the_modified_date( 'c' ) ),
+      esc_html( get_the_modified_date() )
+    );
+
+    echo $time_string; ?> -
+      By <?php echo get_the_author(); ?></span>
     </div>
   </div>
 </a>

@@ -126,7 +126,7 @@ function noko_scripts() {
 
 	wp_enqueue_style( 'noko-fonts', 'https://fonts.googleapis.com/css?family=Dosis' );
 	wp_enqueue_style( 'noko-icon-font', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
-
+	
 	wp_enqueue_script( 'noko-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'noko-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
