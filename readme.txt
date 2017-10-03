@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -28,8 +28,9 @@ Noko theme is a simple theme focused on readability. Theme takes some inspiratio
 Noko includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
-
-= 1.0 - Oct 02 2017 =
+= 0.0.2 - Oct 03 2017 =
+* Alpha Preview
+= 0.0.1 - Oct 02 2017 =
 * Pre Alpha Preview
 
 == Credits ==
