@@ -235,6 +235,9 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
   clear: both;
   color: #000; }
 
+.site-branding {
+  text-align: center; }
+
 .site-title {
   text-transform: uppercase;
   font-weight: bold;

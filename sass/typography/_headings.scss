@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
+.site-branding {
+  text-align: center;
+}
+
 .site-title {
   @extend h1;
   text-transform:uppercase;
