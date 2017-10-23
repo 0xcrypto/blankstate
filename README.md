@@ -38,6 +38,7 @@ Changelog
 
 **0.0.2 - Oct 03 2017**
 * Alpha Preview
+
 **0.0.1 - Oct 02 2017**
 * Pre Alpha Preview
 
