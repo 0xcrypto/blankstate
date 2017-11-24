@@ -4,7 +4,7 @@ Contributors: 0xcrypto
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.0
-Tested up to: 4.8
+Tested up to: 4.9.0
 Stable tag: 0.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -37,3 +37,8 @@ Noko includes support for Infinite Scroll in Jetpack.
 
 * Based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Images used in screenshot are licensed under CC0. https://creativecommons.org/share-your-work/public-domain/cc0/
+
+== Additional Notes == 
+Noko WordPress Theme, Copyright 2017 Vikrant Singh Chauhan.
+Noko is distributed under the terms of the GNU GPLv2

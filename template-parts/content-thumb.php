@@ -31,8 +31,9 @@
       esc_html( get_the_modified_date() )
     );
 
-    echo $time_string; ?> -
-      By <?php echo get_the_author(); ?></span>
+    echo $time_string; ?> - 
+    <?php printf(__('By %s', 'noko'), get_the_author()); ?>
+      </span>
     </div>
   </div>
 </a>

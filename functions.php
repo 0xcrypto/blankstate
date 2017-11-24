@@ -95,8 +95,12 @@ function noko_content_width() {
 }
 add_action( 'after_setup_theme', 'noko_content_width', 0 );
 
-function noko_excerpt() {
-    return '<a class="more-link btn-primary" href="' . get_permalink() . '">Read More</a>';
+function noko_excerpt($link) {
+	if ( is_admin() ) {
+		return $link;
+	}  
+  return '<a class="more-link btn-primary" href="' . esc_url( get_the_permalink() ) . '">Read More</a>';
+
 }
 add_filter( 'the_content_more_link', 'noko_excerpt' );
 

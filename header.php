@@ -52,5 +52,5 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+	<img src="<?php header_image() ?>" style="width:100%">
 	<div id="content" class="site-content">
