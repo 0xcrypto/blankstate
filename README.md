@@ -1,12 +1,15 @@
 Noko
 ===
 
+**This repository is not being updated to the latest patches. Please use the SVN repository available at https://themes.svn.wordpress.org/noko/**
+**Download the theme from https://wordpress.org/themes/download/noko.0.0.4.zip (change the patch version level to the latest available patch.)
+
 Contributors: 0xcrypto  
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready  
 
 Requires at least: 4.0  
 Tested up to: 4.8  
-Stable tag: 0.0.2  
+Stable tag: 0.0.4  
 License: GNU General Public License v2 or later  
 License URI: LICENSE  
 
