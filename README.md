@@ -3,7 +3,7 @@ Noko
 
 **This repository is not being updated to the latest patches. Please use the SVN repository available at https://themes.svn.wordpress.org/noko/**
 
-**Download the theme from https://wordpress.org/themes/download/noko.0.0.4.zip (change the patch version level to the latest available patch.)**
+**Download the theme from https://wordpress.org/themes/noko/**
 
 Contributors: 0xcrypto  
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready  
@@ -39,7 +39,7 @@ Noko includes support for Infinite Scroll in Jetpack.
 
 Changelog
 ===
-
+(Not Updated)
 **0.0.2 - Oct 03 2017**
 * Alpha Preview
 
