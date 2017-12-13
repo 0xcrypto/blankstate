@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.0
 Tested up to: 4.9.0
-Stable tag: 0.0.2
+Stable tag: 0.0.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -13,7 +13,7 @@ A WordPress theme called Noko.
 
 == Description ==
 
-Noko theme is a simple theme focused on readability. Theme takes some inspiration from material design but does not completely follow it.
+Noko theme is a simple theme focused on readability. Theme showcases the posts on the front end on the cards that makes them look beautiful.
 
 == Installation ==
 
@@ -28,6 +28,10 @@ Noko theme is a simple theme focused on readability. Theme takes some inspiratio
 Noko includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 0.0.4 - Nov 27 2017 =
+* Removed scss files.
+= 0.0.3 - Nov 24 2017 =
+* Fixed minor issues.
 = 0.0.2 - Oct 03 2017 =
 * Alpha Preview
 = 0.0.1 - Oct 02 2017 =
