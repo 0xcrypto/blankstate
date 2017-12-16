@@ -1,3 +1,9 @@
+.site-main {
+  @media screen and (max-width: 600px) {
+    margin-top: 20%;
+  }
+}
+
 .sticky {
 	display: block;
 }

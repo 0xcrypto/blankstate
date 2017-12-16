@@ -235,9 +235,6 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
   clear: both;
   color: #000; }
 
-.site-branding {
-  text-align: center; }
-
 .site-title {
   text-transform: uppercase;
   font-weight: bold;
@@ -251,34 +248,41 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
 .site {
   margin: auto; }
 
-@media screen and (max-width: 37.5em) {
-  .site-header {
-    position: fixed;
-    top: 0;
-    background: #fff;
-    width: 100%; }
-    .site-header .site-title {
-      margin: 0;
-      padding-top: 0.5em; }
-    .site-header .menu-toggle {
-      position: absolute;
+.site-header {
+  padding: 7% 0 7% 0; }
+  .site-header .site-branding {
+    text-align: center;
+    margin: auto;
+    background: #fff; }
+  @media screen and (max-width: 600px) {
+    .site-header {
+      position: fixed;
       top: 0;
-      margin: 1em; } }
-.site-header .menu ul {
-  background: #fff; }
+      background: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: center; }
+      .site-header .site-branding {
+        clear: both;
+        width: 65%; }
+      .site-header .site-title {
+        margin: 0;
+        padding-top: 0.5em; } }
 
 .content-area {
   float: left;
-  padding: 8%; }
+  padding: 5%;
+  padding-top: 0; }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
   .content-area-w-sidebar {
     width: 70%; } }
 
 .widget-area {
   float: left;
   padding: 2%; }
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 600px) {
     .widget-area {
       width: 30%; } }
   .widget-area ul {
@@ -329,11 +333,6 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
       font-size: 0.5rem; }
   .card:hover, .card:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
-.owl-carousel {
-  width: 100%; }
-  .owl-carousel div {
-    background: red; }
 
 p {
   margin-bottom: 1.5em;
@@ -547,13 +546,17 @@ a {
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  background: #fff;
+  display: block; }
+  .main-navigation .menu-toggle {
+    position: fixed;
+    top: 3%;
+    right: 5%; }
   .main-navigation ul {
     display: none;
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
     text-align: center; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -573,21 +576,27 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    margin: 1em;
+    width: 100%;
     display: inline-block;
     text-align: center;
     position: relative; }
+    .main-navigation li:hover > a, .main-navigation li.focus > a {
+      background: black;
+      color: #fff; }
   .main-navigation a {
     display: block;
+    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a,
+  .main-navigation .current-menu-ancestor > a {
+    background: #009688;
+    color: #fff; }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none; }
@@ -708,6 +717,10 @@ a {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .site-main {
+    margin-top: 20%; } }
+
 .sticky {
   display: block; }
 

@@ -28,6 +28,9 @@ Noko theme is a simple theme focused on readability. Theme showcases the posts o
 Noko includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 0.0.5 - AAA 00 0000 =
+* Added padding to author name.
+* Fixed header.
 = 0.0.4 - Nov 27 2017 =
 * Removed scss files.
 = 0.0.3 - Nov 24 2017 =

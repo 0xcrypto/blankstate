@@ -1,13 +1,19 @@
 .main-navigation {
 	clear: both;
+	background: #fff;
 	display: block;
-	float: left;
-	width: 100%;
+
+	.menu-toggle {
+		position: fixed;
+		top: 3%;
+		right: 5%;
+	}
 
 	ul {
 		display: none;
 		list-style: none;
-		padding-left: 0;
+		padding: 0;
+		margin: 0;
 		text-align: center;
 
 		ul {
@@ -50,19 +56,21 @@
 	}
 
 	li {
-		// float: left;
-		margin: 1em;
+		width: 100%;
 		display: inline-block;
 		text-align: center;
 		position: relative;
 
 		&:hover > a,
 		&.focus > a {
+			background: $color__background-button - #fff;
+			color: #fff;
 		}
 	}
 
 	a {
 		display: block;
+		padding: 10px;
 		text-decoration: none;
 		text-transform: uppercase;
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -72,14 +80,16 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		background: $color__background-button;
+		color: #fff;
 	}
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
+// .menu-toggle,
+// .main-navigation.toggled ul {
+// 	display: block;
+// }
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {

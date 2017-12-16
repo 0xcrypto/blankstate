@@ -30,17 +30,18 @@
 		menu.className += ' nav-menu';
 	}
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
-		}
-	};
+	jQuery(button).on('click', function(){
+		jQuery(container).toggleClass('toggled', 200);
+    if (jQuery(this).attr('aria-expanded') == 'true') {
+			jQuery(menu).slideUp(300);
+    	jQuery(this).attr('aria-expanded', 'false');
+    	jQuery(menu).attr('aria-expanded', 'false');
+    } else {
+    	jQuery(menu).slideDown(300);
+    	jQuery(this).attr('aria-expanded', 'true');
+    	jQuery(menu).attr('aria-expanded', 'true');
+    }
+	});
 
 	// Get all the link elements within the menu.
 	links    = menu.getElementsByTagName( 'a' );

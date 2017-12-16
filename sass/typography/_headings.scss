@@ -3,9 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
-.site-branding {
-  text-align: center;
-}
+
 
 .site-title {
   @extend h1;
@@ -25,37 +23,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header {
-  @media screen and (max-width: 37.5em) {
+  padding: 7% 0 7% 0;
+
+  .site-branding {
+    text-align: center;
+    margin: auto;
+    background: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
 
     position: fixed;
     top: 0;
     background: #fff;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: center;
+
+    .site-branding {
+      clear: both;
+      width: 65%;
+
+    }
 
     .site-title {
       margin: 0;
       padding-top:0.5em;
     }
-
-    .menu-toggle {
-      position: absolute;
-      top: 0;
-      margin: 1em;
-    }
   }
-
-  .menu ul {
-      background: #fff;
-    }
 }
 
 .content-area {
   float: left;
-  padding: 8%;
+  padding: 5%;
+  padding-top: 0;
 }
 
 .content-area-w-sidebar {
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 600px) {
     width: 70%;
   }
 }
@@ -65,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   padding: 2%;  
 
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 600px) {
     width: 30%;
   }  
 
@@ -76,10 +82,6 @@ h1, h2, h3, h4, h5, h6 {
       list-style: none;
     }}
 }
-
-// .widget-area-w-sidebar {
-
-// }
 
 .site-footer {
   flex: none;
@@ -108,8 +110,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  // background: $color__background-button;
-  // color: #fff;
   flex: auto;
   float: left;
   max-height: 25em;
@@ -134,18 +134,9 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-
   &:hover,
   &:focus
    {
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-}
-
-.owl-carousel {
-  width: 100%;
-
-  div {
-    background: red;
   }
 }
