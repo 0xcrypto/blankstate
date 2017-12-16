@@ -149,7 +149,9 @@ function noko_show_notice() {
         	<strong>
         	<?php _e( 'Loving Noko?', 'noko'); ?>
         	</strong>
-        	<?php _e('Help me make it better! Take this little ', 'noko' ); ?><a href="https://goo.gl/forms/hiQayRloUkm4gdmx2" target="_blank"><?php _e('survey!', 'noko'); ?></a></p>
+        	<?php _e('Help me make it better! Please complete this little ', 'noko' ); ?><a href="<?php echo esc_url( __( 'https://goo.gl/forms/hiQayRloUkm4gdmx2', 'noko' ) ); ?>" target="_blank"><?php printf( __( 'survey', 'noko' ),''); ?></a></p>
+
+        	
     </div>
     <?php
 }

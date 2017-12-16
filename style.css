@@ -1,10 +1,10 @@
 /*!
 Theme Name: Noko
 Theme URI: https://github.com/0xcrypto/noko
-Author: Vikrant
-Author URI: https://vikrant.website
-Description: Noko theme is a simple theme focused on readability. Theme takes some inspiration from material design but does not completely follow it.
-Version: 0.0.4
+Author: Vikrant Singh Chauhan
+Author URI: https://0xcrypto.github.io
+Description: Noko theme is a simple theme focused on readability. Theme showcases the posts in cards that brings astonishing look.
+Version: 0.0.5
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: noko
@@ -576,10 +576,12 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    width: 100%;
     display: inline-block;
     text-align: center;
     position: relative; }
+    @media screen and (max-width: 37.5em) {
+      .main-navigation li {
+        width: 100%; } }
     .main-navigation li:hover > a, .main-navigation li.focus > a {
       background: black;
       color: #fff; }
