@@ -1,4 +1,4 @@
-# Noko
+# Noko [![Build Status](https://travis-ci.org/0xcrypto/noko.svg?branch=master)](https://travis-ci.org/0xcrypto/noko)
 
 Contributors: Vikrant Singh Chauhan  
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready  
