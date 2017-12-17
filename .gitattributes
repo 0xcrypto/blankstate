@@ -2,3 +2,4 @@
 /.gitignore export-ignore
 /sass export-ignore
 /README.md export-ignore
+/.travis.yml
