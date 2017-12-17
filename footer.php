@@ -21,16 +21,14 @@
 			?></a>
 			<span class="sep"> | </span>
 
-			'<?php echo esc_url( __( 'http://xpresswebsolutions.com/', 'noko' ) ); ?>" target="_blank"><?php printf( __( 'Vikrant', 'noko' ),''); ?></a>
 			<?php
-
 
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'noko' ), 'Noko', sprintf(
-				esc_html__('<a href="%1$s" target="_blank">%2$s</a>', 
+				__('<a href="%1$s" target="_blank">%2$s</a>', 
 					'noko'
 				), esc_url( _('http://xpresswebsolutions.com/', 'noko') ), _('Vikrant')
-			); );
+			) );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
