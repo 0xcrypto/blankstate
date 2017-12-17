@@ -3,3 +3,4 @@
 /sass export-ignore
 /README.md export-ignore
 /.travis.yml
+/.jscsrc

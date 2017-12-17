@@ -32,7 +32,7 @@
 
 	jQuery(button).on('click', function(){
 		jQuery(container).toggleClass('toggled', 200);
-    if (jQuery(this).attr('aria-expanded') == 'true') {
+    if (jQuery(this).attr('aria-expanded') === 'true') {
 			jQuery(menu).slideUp(300);
     	jQuery(this).attr('aria-expanded', 'false');
     	jQuery(menu).attr('aria-expanded', 'false');
