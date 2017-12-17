@@ -31,7 +31,7 @@
   }
 
   jQuery( button ).on( 'click', function() {
-    jQuery( container ).toggleClass( 'toggled', 200);
+    jQuery( container ).toggleClass( 'toggled', 200 );
     if ( 'true' === jQuery( this ).attr( 'aria-expanded' ) ) {
       jQuery( menu ).slideUp( 300 );
       jQuery( this ).attr( 'aria-expanded', 'false' );
