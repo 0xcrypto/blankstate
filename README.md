@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.0  
 Tested up to: 4.9.1  
-Stable tag: 0.0.5  
+Stable tag: 0.0.6  
 License: GNU General Public License v2 or later  
 License URI: LICENSE  
 
@@ -29,6 +29,9 @@ Noko is quite new and needs some help. Please consider taking this little [surve
 Noko includes support for Infinite Scroll in Jetpack.
 
 ## Changelog
+**0.0.6 - Dec 16 2017**
+* Footer link fixed
+
 **0.0.5 - Dec 16 2017**
 * Added padding to author name
 * Fixed header
