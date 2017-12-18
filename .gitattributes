@@ -2,5 +2,5 @@
 /.gitignore export-ignore
 /sass export-ignore
 /README.md export-ignore
-/.travis.yml
-/.jscsrc
+/.travis.yml export-ignore
+/.jscsrc export-ignore
