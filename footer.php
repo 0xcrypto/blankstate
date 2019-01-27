@@ -15,21 +15,30 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'noko' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'noko' ), 'WordPress' );
-			?></a>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'noko' ) ); ?>">
+								<?php
+								/* translators: %s: CMS name, i.e. WordPress. */
+								printf( esc_html__( 'Proudly powered by %s', 'noko' ), 'WordPress' );
+								?>
+			</a>
 			<span class="sep"> | </span>
 
-			<?php
+	<?php
 
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'noko' ), 'Noko', sprintf(
-				__('<a href="%1$s" target="_blank">%2$s</a>', 
-					'noko'
-				), esc_url( _('http://xpresswebsolutions.com/', 'noko') ), _('Vikrant')
-			) );
-			?>
+				printf(
+					esc_html__( 'Theme: %1$s by %2$s.', 'noko' ),
+					'Noko',
+					sprintf(
+						__(
+							'<a href="%1$s" target="_blank">%2$s</a>',
+							'noko'
+						),
+						esc_url( _( 'http://wordpress.org/themes/noko' ) ),
+						_( 'Vikrant' )
+					)
+				);
+				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

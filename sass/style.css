@@ -253,17 +253,17 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 37.5em) {
   .site-header {
-    position: fixed;
-    top: 0;
-    background: #fff;
-    width: 100%; }
-    .site-header .site-title {
-      margin: 0;
-      padding-top: 0.5em; }
-    .site-header .menu-toggle {
-      position: absolute;
-      top: 0;
-      margin: 1em; } }
+	position: fixed;
+	top: 0;
+	background: #fff;
+	width: 100%; }
+	.site-header .site-title {
+	  margin: 0;
+	  padding-top: 0.5em; }
+	.site-header .menu-toggle {
+	  position: absolute;
+	  top: 0;
+	  margin: 1em; } }
 .site-header .menu ul {
   background: #fff; }
 
@@ -273,19 +273,19 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 37.5em) {
   .content-area-w-sidebar {
-    width: 70%; } }
+	width: 70%; } }
 
 .widget-area {
   float: left;
   padding: 2%; }
   @media screen and (min-width: 37.5em) {
-    .widget-area {
-      width: 30%; } }
+	.widget-area {
+	  width: 30%; } }
   .widget-area ul {
-    margin: 0;
-    padding-left: 0.5em; }
-    .widget-area ul li {
-      list-style: none; }
+	margin: 0;
+	padding-left: 0.5em; }
+	.widget-area ul li {
+	  list-style: none; }
 
 .site-footer {
   flex: none;
@@ -319,21 +319,21 @@ h1, .site-title, .site-description, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   overflow: hidden; }
   .card .card-image {
-    width: 100%; }
+	width: 100%; }
   .card .text-content {
-    padding: 10px;
-    font-size: 12.8px;
-    font-size: 0.8rem; }
-    .card .text-content p {
-      font-size: 8px;
-      font-size: 0.5rem; }
+	padding: 10px;
+	font-size: 12.8px;
+	font-size: 0.8rem; }
+	.card .text-content p {
+	  font-size: 8px;
+	  font-size: 0.5rem; }
   .card:hover, .card:focus {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .owl-carousel {
   width: 100%; }
   .owl-carousel div {
-    background: red; }
+	background: red; }
 
 p {
   margin-bottom: 1.5em;
@@ -454,8 +454,8 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+	border-color: #ccc #bbb #aaa;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   button:active, .btn-primary:active, button:focus, .btn-primary:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -463,8 +463,8 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    outline: none; }
+	border-color: #aaa #bbb #bbb;
+	outline: none; }
 
 .btn-primary {
   -webkit-appearance: none;
@@ -513,9 +513,9 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #000;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    outline: none; }
+	color: #000;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	outline: none; }
 
 select {
   border: 1px solid #eee; }
@@ -534,13 +534,13 @@ a {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   a:visited {
-    color: #009688; }
+	color: #009688; }
   a:hover, a:focus, a:active {
-    color: #004D40; }
+	color: #004D40; }
   a:focus {
-    outline: thin dotted; }
+	outline: thin dotted; }
   a:hover, a:active {
-    outline: 0; }
+	outline: 0; }
 
 /*--------------------------------------------------------------
 ## Menus
@@ -551,37 +551,37 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
-    list-style: none;
-    padding-left: 0;
-    text-align: center; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
+	display: none;
+	list-style: none;
+	padding-left: 0;
+	text-align: center; }
+	.main-navigation ul ul {
+	  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	  float: left;
+	  position: absolute;
+	  top: 100%;
+	  left: -999em;
+	  z-index: 99999; }
+	  .main-navigation ul ul ul {
+		left: -999em;
+		top: 0; }
+	  .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+		left: 100%; }
+	  .main-navigation ul ul a {
+		width: 200px; }
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li.focus > ul {
+	  left: auto; }
   .main-navigation li {
-    margin: 1em;
-    display: inline-block;
-    text-align: center;
-    position: relative; }
+	margin: 1em;
+	display: inline-block;
+	text-align: center;
+	position: relative; }
   .main-navigation a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 /* Small menu. */
 .menu-toggle,
@@ -590,10 +590,10 @@ a {
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
-    display: none; }
+	display: none; }
 
   .main-navigation ul {
-    display: block; } }
+	display: block; } }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -624,24 +624,24 @@ a {
   word-wrap: normal !important;
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
   .screen-reader-text:focus {
-    background-color: #e2e1e0;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
+	background-color: #e2e1e0;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */ }
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
@@ -700,7 +700,7 @@ a {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
-    max-width: 100%; }
+	max-width: 100%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -776,11 +776,11 @@ object {
   margin-bottom: 1.5em;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+	display: block;
+	margin-left: auto;
+	margin-right: auto; }
   .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
+	margin: 0.8075em 0; }
 
 .wp-caption-text {
   text-align: center; }
@@ -797,21 +797,21 @@ object {
   vertical-align: top;
   width: 100%; }
   .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
+	max-width: 50%; }
   .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
+	max-width: 33.33%; }
   .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
+	max-width: 25%; }
   .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
+	max-width: 20%; }
   .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
+	max-width: 16.66%; }
   .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
+	max-width: 14.28%; }
   .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
+	max-width: 12.5%; }
   .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
+	max-width: 11.11%; }
 
 .gallery-caption {
   display: block; }

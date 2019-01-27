@@ -1,21 +1,22 @@
 # Noko [![Build Status](https://travis-ci.org/0xcrypto/noko.svg?branch=master)](https://travis-ci.org/0xcrypto/noko)
 
-Contributors: Vikrant Singh Chauhan  
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready  
+Contributors: 0xcrypto
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Requires at least: 4.0  
-Tested up to: 4.9.1  
-Stable tag: 0.0.6  
-License: GNU General Public License v2 or later  
-License URI: LICENSE  
+Requires at least: 4.0
+Tested up to: 5.0.3
+Stable tag: trunk
+License: GNU General Public License v2 or later
+License URI: LICENSE
 
-A WordPress theme called Noko.  
-
+A WordPress theme called Noko.
+	
 ## Description
 
 Noko theme is a simple theme focused on readability. Noko theme is a simple theme focused on readability. Theme showcases the posts in cards that brings astonishing look.
 
-Noko is quite new and needs some help. Please consider taking this little [survey](https://goo.gl/forms/hiQayRloUkm4gdmx2).
+* **Version 0.0.7!**
+Noko is back! Now under the banner of Stirpot, we are now offering regular updates and support. Along with that, we are developing a Pro Version with extra features and exclusive support! 
 
 ## Installation
 
@@ -29,6 +30,13 @@ Noko is quite new and needs some help. Please consider taking this little [surve
 Noko includes support for Infinite Scroll in Jetpack.
 
 ## Changelog
+**0.0.7 - Jan 27 2019**
+* Restarted the development :) Expect weekly updates!
+* Tested on WordPress 5.
+* Fixed the Warning message in Footer.
+* Reformatted code to the WordPress Standard.
+* Removed the annoying survey notice.
+
 **0.0.6 - Dec 16 2017**
 * Footer link fixed
 
@@ -64,5 +72,5 @@ Noko includes support for Infinite Scroll in Jetpack.
 8. https://pixabay.com/photo-2563737/
 
 ## Additional Notes
-Noko WordPress Theme, Copyright 2017 Vikrant Singh Chauhan.
-Noko is distributed under the terms of the GNU GPLv2
+Noko WordPress Theme, Copyright 2019 Stirpot.
+Noko is distributed under the terms of the GNU GPLv2.
